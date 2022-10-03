@@ -1,0 +1,28 @@
+#error-display {
+    color: red;
+}
+
+#bulletin-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 20px;
+    background-image: url(../assets/corkboard.jpeg);
+    padding: 1.1em;
+    border: 10px solid rgb(86, 33, 33);
+}
+
+li {
+    background-color: rgb(218, 246, 163);
+    border: 0.5px solid black;
+    box-shadow: 5px 10px #423232;
+}
+
+li h2,
+li p {
+    padding: 10px;
+}
+
+body {
+    background-color: rgb(97, 108, 79);
+}
