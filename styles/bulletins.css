@@ -23,6 +23,15 @@ li p {
     padding: 10px;
 }
 
+.page-header {
+    background-color: rgb(144, 159, 119);
+    color: whitesmoke;
+}
+.title {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
 body {
-    background-color: rgb(112, 124, 92);
+    background-color: rgb(244, 241, 216);
 }
