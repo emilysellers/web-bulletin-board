@@ -35,24 +35,28 @@
             <p class="title">Bulletin Board</p>
             <nav>
                 <a href="/">Bulletin Board</a>
-                <a id="sign-out-link" href="auth">Sign Out</a>
+                <a id="sign-out-link" href="/auth">Sign Out</a>
             </nav>
         </header>
 
         <main>
             <form id="post-form" class="post-form">
-                <label>Title <input type="text" name="title" placeholder="title" /></label>
+                <label>Title <input type="text" name="title" placeholder="title" required /></label>
                 <label
                     >Category
-                    <select name="category">
-                        <option name="event">event 🗓</option>
-                        <option name="announcement">announcement 📢</option>
-                        <option name="free">free item 💛</option>
-                        <option name="sale">for sale 💲</option>
+                    <select name="category" required>
+                        <option name="event" value="event">event 🗓</option>
+                        <option name="announcement" value="announcement">announcement 📢</option>
+                        <option name="free" value="free">free item 💛</option>
+                        <option name="sale" value="sale">for sale 💲</option>
                     </select>
                 </label>
                 <label
-                    >Description<input type="text" name="description" placeholder="description"
+                    >Description<input
+                        type="text"
+                        name="description"
+                        placeholder="description"
+                        required
                 /></label>
                 <label
                     >Contact info<input type="text" name="contact" placeholder="contact info"
