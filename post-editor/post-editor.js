@@ -4,13 +4,25 @@ import { addPost } from '../fetch-utils.js';
 
 /* DOM Elements */
 const postForm = document.getElementById('post-form');
-const errorDisplay = document.getElementById('error-display');
+const errorDisplay =
+    document.getElementById('error-display');
 const postButton = document.getElementById('post-button');
+const imageInput = document.getElementById('image-input');
+const preview = document.getElementById('preview');
 
 /* State */
 let error = null;
 
 /* Events */
+imageInput.addEventListener('change', () => {
+    const file = imageInput.files[0];
+    if (file) {
+        preview.src = URL.createObjectURL(file);
+    } else {
+        preview.src = '/assets.town.png';
+    }
+});
+
 postForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     postButton.disabled = true;
