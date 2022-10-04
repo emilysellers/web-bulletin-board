@@ -41,10 +41,12 @@
 
         <main>
             <form id="post-form" class="post-form">
+                <h2>Add a post</h2>
                 <label>Title <input type="text" name="title" placeholder="title" required /></label>
                 <label
                     >Category
                     <select name="category" required>
+                        <option disabled selected value>category</option>
                         <option name="event" value="event">event 🗓</option>
                         <option name="announcement" value="announcement">announcement 📢</option>
                         <option name="free" value="free">free item 💛</option>
