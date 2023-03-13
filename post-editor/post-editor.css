@@ -1,0 +1,7 @@
+#add-post {
+    width: 300px;
+    display: grid;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    padding: 20px;
+}
